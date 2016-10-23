@@ -53,3 +53,7 @@ A sample usage.
     float cost = tripService.getTripCost(new HardCodedTariffServiceImpl());
     
 ```    
+
+## Assumption
+* When number of passengers exceeded the vehicle maximum, an additional fee of 1.Rs/KM/Ps is charged. Although it wasn't clear that whether the additional charge is to be applied for total number of passenger or just for the exceeded amount. This method assumes that the charge will be applied only to the exceeded number of passengers.
+* A trip can be either one-way or two-way.
