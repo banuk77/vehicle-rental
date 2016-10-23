@@ -43,5 +43,13 @@ A sample usage.
 
     trip.setNumberOfPassengers(3);
 
-    float cost = tripService.getTripCost(trip);
+    TripService tripService = new TripServiceImpl();
+    //we need to set the DistanceService and TariffService that required by TripServiceImpl.
+    //in a real-world application this can be set via a bean container (like spring)
+    
+    ((TripServiceImpl)tripService).setDistanceService(new HardCodedDistanceServiceImpl());
+    ((TripServiceImpl)tripService).setTariffService(tariffService);   
+    
+    float cost = tripService.getTripCost(new HardCodedTariffServiceImpl());
+    
 ```    
