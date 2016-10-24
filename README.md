@@ -50,7 +50,7 @@ A sample usage.
     ((TripServiceImpl)tripService).setDistanceService(new HardCodedDistanceServiceImpl());
     ((TripServiceImpl)tripService).setTariffService(tariffService);   
     
-    float cost = tripService.getTripCost(new HardCodedTariffServiceImpl());
+    float cost = tripService.getTripCost(trip);
     
 ```    
 
