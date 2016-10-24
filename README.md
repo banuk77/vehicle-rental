@@ -48,7 +48,7 @@ A sample usage.
     //in a real-world application this can be set via a bean container (like spring)
     
     ((TripServiceImpl)tripService).setDistanceService(new HardCodedDistanceServiceImpl());
-    ((TripServiceImpl)tripService).setTariffService(tariffService);   
+    ((TripServiceImpl)tripService).setTariffService(new HardCodedTariffServiceImpl());   
     
     float cost = tripService.getTripCost(trip);
     
