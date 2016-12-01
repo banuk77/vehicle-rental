@@ -1,6 +1,6 @@
 # Vehicle Rental Application
 This is a **Hands-on design/implementation exercise** requested by a company as part of interview process.
-The tasked is to design an api that fits inside a vehicle rental application and provides services to calculate the cost for a trip.
+The task is to design an api that fits inside a vehicle rental application and provides services to calculate the cost for a trip.
 
 ## The Problem Statement.
 * A vehicle can be rented for a trip. Vehicle can be a SUV, car, van, bus, etc.
